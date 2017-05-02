@@ -1,0 +1,83 @@
+<html>
+
+<head>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.js"></script>
+
+
+
+<style type="text/css">
+body{
+	width: 1200px;
+	background-color: black;
+	margin: 0px auto 0px auto;
+}
+h1{
+	width: 500px;
+	text-align: center;
+	background-color: #de5755;
+	
+	margin: 0px auto 0px auto;
+	margin-bottom: 30px;
+}
+.gallery{
+	width: 1000px;
+	background-color: #de5755;
+	margin: 0px auto 0px auto;
+}
+.gallery img{
+	width: 400px;
+	margin: 20px;
+	border: 1px solid black;
+}
+
+
+
+
+</style>
+
+</head>
+
+
+
+
+<body>
+ <h1> LIGHTBOX GALLERY</h1>
+ <div class="gallery">
+     <a class="galleryItem" href="images/img1.jpg"> <img src="images/img1.jpg"> </a> 
+     <a class="galleryItem" href="images/img2.jpg"> <img src="images/img2.jpg"> </a> 
+     <a class="galleryItem" href="images/img3.jpg"> <img src="images/img3.jpg"> </a> 
+     <a class="galleryItem" href="images/img4.jpg"> <img src="images/img4.jpg"> </a>
+
+
+
+ </div>
+
+
+
+
+<!-- Javasscript files -->
+
+<script type="text/javascript">
+//initializing your javascript
+$(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+
+$('.galleryItem').magnificPopup({
+  type: 'image'
+  // other options
+});
+  
+});
+
+</script>
+</body>
+
+</html>
